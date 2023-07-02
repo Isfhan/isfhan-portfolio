@@ -33,7 +33,7 @@ const Navbar = () => {
             <div className='bg-lime-400 h-4 w-full'></div>
 
             {/* Navbar */}
-            <nav className="bg-background border-b border-gray-700">
+            <nav className="bg-background border-b border-gray-700 animate__animated animate__fadeInDown">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
                     <div className="flex justify-between h-16">
 
