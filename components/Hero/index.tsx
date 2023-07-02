@@ -19,7 +19,7 @@ const Hero = () => {
 
                 <div className="flex-shrink-0">
                     <Image
-                        className="border-b-4 border-lime-400"
+                        className="border-b-4 border-lime-400 animate__animated animate__backInLeft"
                         src="/isfhan.jpg"
                         alt="Picture of the Isfhan Ahmed"
                         width={500}
@@ -27,7 +27,7 @@ const Hero = () => {
                     />
                 </div>
 
-                <div className="flex justify-center flex-col p-4">
+                <div className="flex justify-center flex-col p-4 animate__animated animate__backInRight">
                     <h1 className="text-white text-5xl text-center lg:text-left font-bold mb-5">
                         Hi, I'm Isfhan. Nice to meet you.
                     </h1>
