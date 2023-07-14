@@ -6,8 +6,8 @@ import Education from '@/components/Education';
 
 
 
-
 const Home = () => {
+
     return (
 
         <div className="container max-w-7xl mt-10">
@@ -19,7 +19,10 @@ const Home = () => {
             <Certifications />
 
         </div>
-    )
+    );
+
 }
+
+
 
 export default Home;

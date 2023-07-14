@@ -1,9 +1,11 @@
 import Image from "next/image";
 
+
+
 const Hero = () => {
 
     return (
-        
+
         <div className="mb-40">
 
             <div>
@@ -19,7 +21,7 @@ const Hero = () => {
 
                 <div className="flex-shrink-0">
                     <Image
-                        className="border-b-4 border-lime-400 animate__animated animate__backInLeft"
+                        className="border-b-4 border-lime-400 animate__animated animate__backInLeft w-72 sm:w-[500px] md:w-[500px]"
                         src="/isfhan.jpg"
                         alt="Picture of the Isfhan Ahmed"
                         width={500}

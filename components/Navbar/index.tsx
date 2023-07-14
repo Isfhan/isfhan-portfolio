@@ -57,7 +57,7 @@ const Navbar = () => {
                                         About
                                     </Link>
 
-                                    <Link href="/resume" className="flex items-center gap-2 text-white transition-all duration-300 hover:bg-lime-400 hover:text-background px-3 py-2 rounded-md text-lg font-bold cursor-pointer">
+                                    <Link href="/Isfhan-Resume-2023.pdf" target={'_blank'} className="flex items-center gap-2 text-white transition-all duration-300 hover:bg-lime-400 hover:text-background px-3 py-2 rounded-md text-lg font-bold cursor-pointer">
                                         Resume <DownloadIcon className="h-4 w-4" />
                                     </Link>
 

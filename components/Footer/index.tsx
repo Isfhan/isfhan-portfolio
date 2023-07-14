@@ -45,7 +45,7 @@ export const Footer = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/resume" className="flex items-center gap-2 text-background transition-all duration-300 px-3 py-2 rounded-md text-base  cursor-pointer">
+                            <Link href="/Isfhan-Resume-2023.pdf" target={'_blank'} className="flex items-center gap-2 text-background transition-all duration-300 px-3 py-2 rounded-md text-base  cursor-pointer">
                                 Resume <DownloadIcon className="h-4 w-4" />
                             </Link>
                         </li>
