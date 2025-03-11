@@ -1,98 +1,115 @@
 const Skills = () => {
+  return (
+    // apply bg and some hover effect, cursor-ptr and  some more changes also reduce the code by use map() 
+    <div className="mt-10 px-5 md:px-10">
+      
+      <h1 className="text-white text-5xl font-extrabold mb-8 border-b-4 border-lime-400 pb-2 w-max">
+      My Skills
+      </h1>
 
-    return (
-
-        <div className="mt-10">
-
-            <h1 className="text-white text-5xl text-left font-bold mb-5">My Skills</h1>
-
-            <div className=" mt-10 p-3">
-
-                <div className="block w-full p-4  rounded-lg shadow transition-all duration-500">
-
-                    <h5 className="mb-4 text-2xl font-bold tracking-tight text-white ">
-                        PROFESSIONAL SKILLS
-                    </h5>
-
-                    <ul className="flex flex-wrap p-2 text-white font-bold">
-                        <li className="rounded-lg p-2 m-2 border-2 border-lime-400">ANALYTICAL THINKING</li>
-                        <li className="rounded-lg p-2 m-2 border-2 border-lime-400">CRITICAL THINKING</li>
-                        <li className="rounded-lg p-2 m-2 border-2 border-lime-400">CREATIVE THINKING</li>
-                        <li className="rounded-lg p-2 m-2 border-2 border-lime-400">DECISION-MAKING</li>
-                        <li className="rounded-lg p-2 m-2 border-2 border-lime-400">PROBLEM-SOLVING</li>
-                        <li className="rounded-lg p-2 m-2 border-2 border-lime-400">LOGICAL REASONING</li>
-                        <li className="rounded-lg p-2 m-2 border-2 border-lime-400">STRATEGIC PLANNING</li>
-                        <li className="rounded-lg p-2 m-2 border-2 border-lime-400">RESEARCH</li>
-                        <li className="rounded-lg p-2 m-2 border-2 border-lime-400">TIME MANAGEMENT</li>
-                        <li className="rounded-lg p-2 m-2 border-2 border-lime-400">ATTENTION TO DETAIL</li>
-                        <li className="rounded-lg p-2 m-2 border-2 border-lime-400">ADAPTABILITY</li>
-                        <li className="rounded-lg p-2 m-2 border-2 border-lime-400">COLLABORATION</li>
-                        <li className="rounded-lg p-2 m-2 border-2 border-lime-400">COMMUNICATION</li>
-                        <li className="rounded-lg p-2 m-2 border-2 border-lime-400">LEADERSHIP</li>
-                        <li className="rounded-lg p-2 m-2 border-2 border-lime-400">RISK MANAGEMENT</li>
-                        <li className="rounded-lg p-2 m-2 border-2 border-lime-400">CONTINUOUS LEARNING</li>
-                    </ul>
-
-                </div>
-
-                <div className="block w-full p-4  rounded-lg shadow transition-all duration-500">
-
-                    <h5 className="mb-4 text-2xl font-bold tracking-tight text-white ">
-                        WEB DEVELOPMENT
-                    </h5>
-
-                    <ul className="flex flex-wrap p-2 text-white font-bold">
-                        <li className=" rounded-lg p-2 m-2 border-2 border-lime-400">HTML</li>
-                        <li className=" rounded-lg p-2 m-2 border-2 border-lime-400">CSS</li>
-                        <li className=" rounded-lg p-2 m-2 border-2 border-lime-400">JavaScript</li>
-                        <li className=" rounded-lg p-2 m-2 border-2 border-lime-400">jQuery</li>
-                        <li className=" rounded-lg p-2 m-2 border-2 border-lime-400">Bootstrap</li>
-                        <li className=" rounded-lg p-2 m-2 border-2 border-lime-400">PHP</li>
-                        <li className=" rounded-lg p-2 m-2 border-2 border-lime-400">Laravel</li>
-                        <li className=" rounded-lg p-2 m-2 border-2 border-lime-400">Express.js</li>
-                        <li className=" rounded-lg p-2 m-2 border-2 border-lime-400">Node.js</li>
-                        <li className=" rounded-lg p-2 m-2 border-2 border-lime-400">Python</li>
-                        <li className=" rounded-lg p-2 m-2 border-2 border-lime-400">Flask</li>
-                        <li className=" rounded-lg p-2 m-2 border-2 border-lime-400">React</li>
-                        <li className=" rounded-lg p-2 m-2 border-2 border-lime-400">Vue</li>
-                        <li className=" rounded-lg p-2 m-2 border-2 border-lime-400">AJAX</li>
-                        <li className=" rounded-lg p-2 m-2 border-2 border-lime-400">Shopware</li>
-                        <li className=" rounded-lg p-2 m-2 border-2 border-lime-400">MongoDB</li>
-                        <li className=" rounded-lg p-2 m-2 border-2 border-lime-400">MySQL</li>
-                        <li className=" rounded-lg p-2 m-2 border-2 border-lime-400">PostgreSQL</li>
-                        <li className=" rounded-lg p-2 m-2 border-2 border-lime-400">AWS</li>
-                        <li className=" rounded-lg p-2 m-2 border-2 border-lime-400">Linux</li>
-                        <li className=" rounded-lg p-2 m-2 border-2 border-lime-400">Docker</li>
-                        <li className=" rounded-lg p-2 m-2 border-2 border-lime-400">Git</li>
-                    </ul>
-
-                </div>
-
-                <div className="block w-full p-4  rounded-lg shadow transition-all duration-500">
-
-                    <h5 className="mb-4 text-2xl font-bold tracking-tight text-white ">
-                        ARTIFICIAL INTELLIGENCE
-                    </h5>
-
-                    <ul className="flex flex-wrap p-2 text-white font-bold">
-                        <li className=" rounded-lg p-2 m-2 border-2 border-lime-400">PYTHON</li>
-                        <li className=" rounded-lg p-2 m-2 border-2 border-lime-400">FLASK</li>
-                        <li className=" rounded-lg p-2 m-2 border-2 border-lime-400">NUMPY</li>
-                        <li className=" rounded-lg p-2 m-2 border-2 border-lime-400">PANDAS</li>
-                        <li className=" rounded-lg p-2 m-2 border-2 border-lime-400">Tensorflow</li>
-                        <li className=" rounded-lg p-2 m-2 border-2 border-lime-400">KERAS</li>
-                        <li className=" rounded-lg p-2 m-2 border-2 border-lime-400">SCIKIT-LEARN</li>
-                        <li className=" rounded-lg p-2 m-2 border-2 border-lime-400">MATPLOTLIB</li>
-                        <li className=" rounded-lg p-2 m-2 border-2 border-lime-400">OPENCV</li>
-
-                    </ul>
-
-                </div>
-
-            </div>
-
+      <div className="mt-10 p-3 space-y-8 text-white">
+        {/************************* Professional Skills ************************/}
+        <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500">
+          <h5 className="mb-4 text-2xl font-bold tracking-tight text-lime-400">
+            PROFESSIONAL SKILLS
+          </h5>
+          <div className="flex flex-wrap gap-4 p-2">
+            {[
+              "ANALYTICAL THINKING",
+              "CRITICAL THINKING",
+              "CREATIVE THINKING",
+              "DECISION-MAKING",
+              "PROBLEM-SOLVING",
+              "LOGICAL REASONING",
+              "STRATEGIC PLANNING",
+              "RESEARCH",
+              "TIME MANAGEMENT",
+              "ATTENTION TO DETAIL",
+              "ADAPTABILITY",
+              "COLLABORATION",
+              "COMMUNICATION",
+              "LEADERSHIP",
+              "RISK MANAGEMENT",
+              "CONTINUOUS LEARNING",
+            ].map((skill) => (
+              <div
+                key={skill}
+                className="rounded-lg px-3 py-1 cursor-pointer border-2 border-lime-400 bg-gray-700 hover:bg-lime-500 hover:text-black transition-all duration-300"
+              >
+                {skill}
+              </div>
+            ))}
+          </div>
         </div>
-    )
-}
 
+         {/************************** Web Development  *******************/}
+        <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500">
+          <h5 className="mb-4 text-2xl font-bold tracking-tight text-lime-400">
+            WEB DEVELOPMENT
+          </h5>
+          <div className="flex flex-wrap gap-4 p-2">
+            {[
+              "HTML",
+              "CSS",
+              "JavaScript",
+              "jQuery",
+              "Bootstrap",
+              "PHP",
+              "Laravel",
+              "Express.js",
+              "Node.js",
+              "Python",
+              "Flask",
+              "React",
+              "Vue",
+              "AJAX",
+              "Shopware",
+              "MongoDB",
+              "MySQL",
+              "PostgreSQL",
+              "AWS",
+              "Linux",
+              "Docker",
+              "Git",
+            ].map((skill) => (
+              <div
+                key={skill}
+                className="rounded-lg px-3 py-1 cursor-pointer border-2 border-lime-400 bg-gray-700 hover:bg-lime-500 hover:text-black transition-all duration-300"
+              >
+                {skill}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/**************** Artificial Intelligence *******************/}
+        <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500">
+          <h5 className="mb-4 text-2xl font-bold tracking-tight text-lime-400">
+            ARTIFICIAL INTELLIGENCE
+          </h5>
+          <div className="flex flex-wrap gap-4 p-2">
+            {[
+              "PYTHON",
+              "FLASK",
+              "NUMPY",
+              "PANDAS",
+              "Tensorflow",
+              "KERAS",
+              "SCIKIT-LEARN",
+              "MATPLOTLIB",
+              "OPENCV",
+            ].map((skill) => (
+              <div
+                key={skill}
+                className="rounded-lg px-3 py-1 cursor-pointer border-2 border-lime-400 bg-gray-700 hover:bg-lime-500 hover:text-black transition-all duration-300"
+              >
+                {skill}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 export default Skills;
