@@ -1,210 +1,122 @@
-import Image from 'next/image';
-import Link from 'next/link';
-
+import Image from "next/image";
+import Link from "next/link";
+import { Award, ExternalLink } from "lucide-react";
+import { portfolioData } from "@/lib/data";
 
 const Certifications = () => {
+  const { certifications } = portfolioData;
 
-    return (
+  return (
+    <div className="mt-6 sm:mt-8 md:mt-10">
+      <div className="mb-4 sm:mb-5">
+        <h1 className="text-black text-3xl sm:text-4xl md:text-5xl text-left font-bold border-4 border-black bg-neo-yellow px-3 py-2 sm:px-4 sm:py-2 inline-flex items-center gap-2 sm:gap-3 shadow-neo-sm hover:shadow-neo transform hover:scale-105 transition-all duration-300">
+          <Award className="w-8 h-8 sm:w-10 sm:h-10 text-black flex-shrink-0" />
+          My Certifications
+        </h1>
+      </div>
 
-        <div className="mt-10">
-
-            <h1 className="text-white text-5xl text-left font-bold mb-5">My Certifications</h1>
-
-            <div className="my-10 p-3">
-
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-                    <div className="bg-white rounded-lg shadow-md p-4 border-b-4 border-lime-400">
-                        <Image
-                            className="w-full h-40 object-cover rounded-md mb-4"
-                            src="/net-fun.png"
-                            width={500}
-                            height={500}
-                            alt='c'
-                        />
-                        <Link href="https://codedamn.com/certificate/verify/b8be266e289d2659511369640aa385954280c342" >
-                            <h3 className="text-lg font-bold">Web - Internet fundamentals</h3>
-                            <p className="text-gray-600">codedamn</p>
-                        </Link>
-
-                    </div>
-
-                    <div className="bg-white rounded-lg shadow-md p-4 border-b-4 border-lime-400">
-                        <Image
-                            className="w-full h-40 object-cover rounded-md mb-4"
-                            src="/wdf.png"
-                            width={500}
-                            height={500}
-                            alt='c'
-                        />
-                        <Link href="https://www.sololearn.com/Certificate/CT-UARFCW4T/pdf" >
-                            <h3 className="text-lg font-bold">WEB DEVELOPMENT FUNDAMENTALS</h3>
-                            <p className="text-gray-600">Sololearn</p>
-                        </Link>
-
-                    </div>
-
-                    <div className="bg-white rounded-lg shadow-md p-4 border-b-4 border-lime-400">
-                        <Image
-                            className="w-full h-40 object-cover rounded-md mb-4"
-                            src="/rwd.png"
-                            width={500}
-                            height={500}
-                            alt='c'
-                        />
-                        <Link href="https://www.freecodecamp.org/certification/isfhan/responsive-web-design" >
-                            <h3 className="text-lg font-bold">Responsive Web Design</h3>
-                            <p className="text-gray-600">FreeCodeCamp.org</p>
-                        </Link>
-
-                    </div>
-
-                    <div className="bg-white rounded-lg shadow-md p-4 border-b-4 border-lime-400">
-                        <Image
-                            className="w-full h-40 object-cover rounded-md mb-4"
-                            src="/bda.png"
-                            width={500}
-                            height={500}
-                            alt='c'
-                        />
-                        <Link href="https://www.freecodecamp.org/certification/isfhan/back-end-development-and-apis" >
-                            <h3 className="text-lg font-bold">Back End Development and APIs</h3>
-                            <p className="text-gray-600">FreeCodeCamp.org</p>
-                        </Link>
-
-                    </div>
-
-                    <div className="bg-white rounded-lg shadow-md p-4 border-b-4 border-lime-400">
-                        <Image
-                            className="w-full h-40 object-cover rounded-md mb-4"
-                            src="/cwa.png"
-                            width={500}
-                            height={500}
-                            alt='c'
-                        />
-                        <Link href="https://www.udemy.com/certificate/UC-b8064000-0225-4f4f-bf6c-4bde61a14bdc/" >
-                            <h3 className="text-lg font-bold">NodeJs E-Commerce Web API</h3>
-                            <p className="text-gray-600">Udemy</p>
-                        </Link>
-
-                    </div>
-
-                    <div className="bg-white rounded-lg shadow-md p-4 border-b-4 border-lime-400">
-                        <Image
-                            className="w-full h-40 object-cover rounded-md mb-4"
-                            src="/mongo-db.png"
-                            width={500}
-                            height={500}
-                            alt='c'
-                        />
-                        <Link href="https://learn.mongodb.com/c/xwdIcLBfQMm0yOXOSIQhXg" >
-                            <h3 className="text-lg font-bold">MongoDB Node.js Developer Path</h3>
-                            <p className="text-gray-600">MongoDB</p>
-                        </Link>
-
-                    </div>
-
-                    <div className="bg-white rounded-lg shadow-md p-4 border-b-4 border-lime-400">
-                        <Image
-                            className="w-full h-40 object-cover rounded-md mb-4"
-                            src="/adv-node.png"
-                            width={500}
-                            height={500}
-                            alt='c'
-                        />
-                        <Link href="https://codedamn.com/certificate/verify/a4d85b6c792e80ba979a88527911ca71eb88473f" >
-                            <h3 className="text-lg font-bold">Advanced Node.js Course</h3>
-                            <p className="text-gray-600">codedamn</p>
-                        </Link>
-
-                    </div>
-
-                    <div className="bg-white rounded-lg shadow-md p-4 border-b-4 border-lime-400">
-                        <Image
-                            className="w-full h-40 object-cover rounded-md mb-4"
-                            src="/php.png"
-                            width={500}
-                            height={500}
-                            alt='c'
-                        />
-                        <Link href="https://olympus1.mygreatlearning.com/course_certificate/QWKBPXTC" >
-                            <h3 className="text-lg font-bold">PHP</h3>
-                            <p className="text-gray-600">Great Learning</p>
-                        </Link>
-
-                    </div>
-
-                    <div className="bg-white rounded-lg shadow-md p-4 border-b-4 border-lime-400">
-                        <Image
-                            className="w-full h-40 object-cover rounded-md mb-4"
-                            src="/php-adv.png"
-                            width={500}
-                            height={500}
-                            alt='c'
-                        />
-                        <Link href="https://www.udemy.com/certificate/UC-bea53e2d-7718-4aeb-8881-7cc3bc4e44fc/" >
-                            <h3 className="text-lg font-bold">PHP - Advanced Features</h3>
-                            <p className="text-gray-600">Udemy</p>
-                        </Link>
-
-                    </div>
-
-                    <div className="bg-white rounded-lg shadow-md p-4 border-b-4 border-lime-400">
-                        <Image
-                            className="w-full h-40 object-cover rounded-md mb-4"
-                            src="/docker.png"
-                            width={500}
-                            height={500}
-                            alt='c'
-                        />
-                        <Link href="https://olympus1.mygreatlearning.com/course_certificate/XWLNIRWF" >
-                            <h3 className="text-lg font-bold">Docker for Intermediate Level</h3>
-                            <p className="text-gray-600">Great Learning</p>
-                        </Link>
-
-                    </div>
-
-                    <div className="bg-white rounded-lg shadow-md p-4 border-b-4 border-lime-400">
-                        <Image
-                            className="w-full h-40 object-cover rounded-md mb-4"
-                            src="/python.png"
-                            width={500}
-                            height={500}
-                            alt='c'
-                        />
-                        <Link href="https://www.credly.com/badges/1722d44d-3d8f-474a-a062-fd66d45a27c9/linked_in_profile" >
-                            <h3 className="text-lg font-bold">Python for Data Science</h3>
-                            <p className="text-gray-600">IBM</p>
-                        </Link>
-
-                    </div>
-
-                    <div className="bg-white rounded-lg shadow-md p-4 border-b-4 border-lime-400">
-                        <Image
-                            className="w-full h-40 object-cover rounded-md mb-4"
-                            src="/mysql-cli.png"
-                            width={500}
-                            height={500}
-                            alt='c'
-                        />
-                        <Link href="https://courses.cognitiveclass.ai/certificates/f4f752f200434d90b4cc79f4ff9cd879" >
-                            <h3 className="text-lg font-bold">MySQL command line</h3>
-                            <p className="text-gray-600">Cognitiveclass</p>
-                        </Link>
-
-                    </div>
-
+      <div className="my-6 sm:my-8 md:my-10 p-2 sm:p-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6">
+          {certifications.map((cert, index) => {
+            const getHoverColor = () => {
+              if (cert.bgColor === "bg-white") return "hover:text-white";
+              if (cert.bgColor === "bg-neo-yellow")
+                return "hover:text-neo-yellow";
+              if (cert.bgColor === "bg-neo-cyan") return "hover:text-neo-cyan";
+              if (cert.bgColor === "bg-neo-pink") return "hover:text-neo-pink";
+              return "hover:text-neo-cyan";
+            };
+            const getAwardColor = () => {
+              if (cert.bgColor === "bg-white") return "text-white";
+              if (cert.bgColor === "bg-neo-yellow") return "text-neo-yellow";
+              if (cert.bgColor === "bg-neo-cyan") return "text-neo-cyan";
+              if (cert.bgColor === "bg-neo-pink") return "text-neo-pink";
+              return "text-neo-yellow";
+            };
+            return (
+              <div
+                key={index}
+                className={`${cert.bgColor} border-4 border-black p-3 sm:p-4 relative shadow-neo-sm hover:shadow-[8px_8px_0px_0px_#000000] transition-all duration-300 transform hover:scale-[1.05] hover:-translate-y-2 hover:-rotate-1 group animate__animated animate__fadeInUp`}
+                style={{ animationDelay: `${index * 0.05}s` }}
+              >
+                <div
+                  className={`absolute -top-2 -right-2 sm:-top-3 sm:-right-3 bg-black border-4 border-black p-1 sm:p-1.5 z-20`}
+                >
+                  <Award
+                    className={`w-4 h-4 sm:w-5 sm:h-5 ${getAwardColor()}`}
+                  />
                 </div>
 
-                <p className='text-2xl text-white text-center mt-5 p-4'>
-                    These are a few of my certifications. For a comprehensive list, please visit my <Link href="https://pk.linkedin.com/in/isfhan" className="font-medium text-blue-600 underline hover:text-blue-700 hover:no-underline">LinkedIn profile</Link>  where you can find more details.
-                </p>
-            </div>
+                {/* Decorative corner */}
+                <div
+                  className={`absolute -bottom-2 -left-2 sm:-bottom-3 sm:-left-3 w-4 h-4 sm:w-6 sm:h-6 ${cert.bgColor} border-4 border-black transform rotate-45 opacity-50 group-hover:opacity-100 group-hover:rotate-90 transition-all duration-300`}
+                ></div>
 
+                <Image
+                  className="w-full h-32 sm:h-40 object-cover border-4 border-black mb-3 sm:mb-4 transform group-hover:scale-105 transition-transform duration-300"
+                  src={cert.image}
+                  width={500}
+                  height={500}
+                  alt={cert.title}
+                />
+                <Link
+                  href={cert.link}
+                  className={`hover:bg-black ${getHoverColor()} transition-all duration-300 block group p-1.5 sm:p-2`}
+                >
+                  <h3
+                    className={`text-base sm:text-lg font-bold text-black flex items-center gap-1.5 sm:gap-2 transition-colors ${
+                      cert.bgColor === "bg-white"
+                        ? "group-hover:text-white"
+                        : cert.bgColor === "bg-neo-yellow"
+                        ? "group-hover:text-neo-yellow"
+                        : cert.bgColor === "bg-neo-cyan"
+                        ? "group-hover:text-neo-cyan"
+                        : cert.bgColor === "bg-neo-pink"
+                        ? "group-hover:text-neo-pink"
+                        : "group-hover:text-neo-cyan"
+                    }`}
+                  >
+                    {cert.title}
+                    <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0 transform group-hover:translate-x-1 group-hover:translate-y-[-2px] transition-transform duration-300" />
+                  </h3>
+                  <p
+                    className={`text-black font-bold transition-colors text-sm sm:text-base ${
+                      cert.bgColor === "bg-white"
+                        ? "group-hover:text-white"
+                        : cert.bgColor === "bg-neo-yellow"
+                        ? "group-hover:text-neo-yellow"
+                        : cert.bgColor === "bg-neo-cyan"
+                        ? "group-hover:text-neo-cyan"
+                        : cert.bgColor === "bg-neo-pink"
+                        ? "group-hover:text-neo-pink"
+                        : "group-hover:text-neo-cyan"
+                    }`}
+                  >
+                    {cert.provider}
+                  </p>
+                </Link>
+              </div>
+            );
+          })}
         </div>
-    );
-}
 
-
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-black text-center mt-4 sm:mt-5 p-3 sm:p-4 border-4 border-black bg-neo-yellow font-bold shadow-neo-sm hover:shadow-neo transition-all duration-300 transform hover:scale-[1.02]">
+          These are a few of my certifications. For a comprehensive list, please
+          visit my{" "}
+          <Link
+            href={
+              portfolioData.social.find((s) => s.name === "LinkedIn")?.url ||
+              "#"
+            }
+            className="bg-black text-neo-yellow px-1.5 py-0.5 sm:px-2 sm:py-1 border-4 border-black hover:bg-neo-cyan hover:text-black break-words transform hover:scale-110 transition-all duration-300 inline-block"
+          >
+            LinkedIn profile
+          </Link>{" "}
+          where you can find more details.
+        </p>
+      </div>
+    </div>
+  );
+};
 
 export default Certifications;

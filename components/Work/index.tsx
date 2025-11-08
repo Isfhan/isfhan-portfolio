@@ -1,144 +1,61 @@
+import { Briefcase, Calendar, Code2, Rocket } from "lucide-react";
+import { portfolioData } from "@/lib/data";
 
 const Work = () => {
+  const { work: workExperiences } = portfolioData;
 
-    return (
-        
-        <div className="mt-10">
-            <h1 className="text-white text-5xl text-left  font-bold mb-5">My Work Experience</h1>
+  return (
+    <div className="mt-6 sm:mt-8 md:mt-10">
+      <div className="mb-4 sm:mb-5">
+        <h1 className="text-black text-3xl sm:text-4xl md:text-5xl text-left font-bold border-4 border-black bg-neo-yellow px-3 py-2 sm:px-4 sm:py-2 inline-flex items-center gap-2 sm:gap-3 shadow-neo-sm hover:shadow-neo transform hover:scale-105 transition-all duration-300">
+          <Briefcase className="w-8 h-8 sm:w-10 sm:h-10 text-black flex-shrink-0" />
+          My Work Experience
+        </h1>
+      </div>
 
-            <div className="mt-10 p-8">
-                <ol className="relative border-l border-gray-200">
-
-                    <li className="mb-10 ml-6">
-
-                        <span className="absolute flex items-center justify-center w-6 h-6 bg-white rounded-full -left-3 ring-8 ring-white">
-                            <svg aria-hidden="true" className="w-5 h-5 text-white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
-                            </svg>
-                        </span>
-
-                        <h3 className="flex items-center mb-1 pl-2 text-lg font-bold text-lime-400">
-                            Software Engineer at Cloud Primero B.V
-                            <span className="bg-white text-background text-sm font-medium mr-2 px-2.5 py-0.5 rounded ml-3">
-                                Present
-                            </span>
-                        </h3>
-
-                        <p className="mb-4 text-base font-normal text-white pl-2">
-                            I am currently working on backend tasks for the 433 Football CMS App. My responsibilities include utilizing Node.js, Express.js, MongoDB, AWS Lambda, and Mongoose to develop efficient and reliable backend functionalities. I actively collaborate with other developers to ensure the production of high-quality code. Additionally, I troubleshoot and debug any issues that arise during development and provide clear and concise documentation for the code I develop.
-                        </p>
-
-                    </li>
-
-                    <li className="mb-10 ml-6">
-
-                        <span className="absolute flex items-center justify-center w-6 h-6 bg-white rounded-full -left-3 ring-8 ring-white">
-                            <svg aria-hidden="true" className="w-5 h-5 text-white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
-                            </svg>
-                        </span>
-
-                        <h3 className="flex items-center mb-1 pl-2 text-lg font-bold text-lime-400">
-                            PHP | JS | Shopware | Full Stack Developer at Zepcom
-                        </h3>
-
-                        <time className="block mb-2 text-sm font-normal leading-none text-white pl-2">
-                            08/2019 - 03/2022
-                        </time>
-
-                        <p className="mb-4 text-base font-normal text-white pl-2">
-                            My primary responsibility was developing Shopware plugins.
-                            I also worked on various PHP and JavaScript tasks as secondary responsibilities.
-                            Collaboration with fellow developers was crucial to ensure the delivery of high-quality code.
-                            I maintained a focus on continuously improving my technical skills and staying up-to-date with industry developments.
-                            Timely delivery of assigned tasks was a priority for me throughout my role
-                        </p>
-
-                    </li>
-
-                    <li className="mb-10 ml-6">
-
-                        <span className="absolute flex items-center justify-center w-6 h-6 bg-white rounded-full -left-3 ring-8 ring-white">
-                            <svg aria-hidden="true" className="w-5 h-5 text-white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
-                            </svg>
-                        </span>
-
-                        <h3 className="flex items-center mb-1 pl-2 text-lg font-bold text-lime-400">
-                            Full Stack Developer at Devoppia
-                        </h3>
-
-                        <time className="block mb-2 text-sm font-normal leading-none text-white pl-2">
-                            05/2018 - 08/2019
-                        </time>
-
-                        <p className="mb-4 text-base font-normal text-white pl-2">
-                            I performed a wide range of tasks utilizing PHP, JavaScript, Node.js, Laravel, AWS,
-                            and various Front-End technologies for medical and freelance projects.
-                            Troubleshooting and debugging issues were part of my routine to ensure smooth functionality.
-                            Working in a fast-paced environment with changing priorities and tight deadlines was a
-                            common aspect of my work, and I adapted effectively to meet project requirements.
-                        </p>
-
-                    </li>
-
-                    <li className="mb-10 ml-6">
-
-                        <span className="absolute flex items-center justify-center w-6 h-6 bg-white rounded-full -left-3 ring-8 ring-white">
-                            <svg aria-hidden="true" className="w-5 h-5 text-white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
-                            </svg>
-                        </span>
-
-                        <h3 className="flex items-center mb-1 pl-2 text-lg font-bold text-lime-400">
-                            Full Stack Laravel Developer at Chaabi.pk
-                        </h3>
-
-                        <time className="block mb-2 text-sm font-normal leading-none text-white pl-2">
-                            04/2017 - 08/2018
-                        </time>
-
-                        <p className="mb-4 text-base font-normal text-white pl-2">
-                            I owned the entire development lifecycle of the dropshipping portal,
-                            from requirements gathering to deployment.
-                            I built front-end views using Laravel's Blade templating engine, HTML, CSS, and JavaScript.
-                            Additionally,
-                            I created the entire backend, including database design, API integration, and business logic
-                            implementation.
-                        </p>
-
-                    </li>
-
-                    <li className="mb-10 ml-6">
-
-                        <span className="absolute flex items-center justify-center w-6 h-6 bg-white rounded-full -left-3 ring-8 ring-white">
-                            <svg aria-hidden="true" className="w-5 h-5 text-white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
-                            </svg>
-                        </span>
-
-                        <h3 className="flex items-center mb-1 pl-2 text-lg font-bold text-lime-400">
-                            PHP | Javascript Developer at Ali Info Tech Sdn Bhd
-                        </h3>
-
-                        <time className="block mb-2 text-sm font-normal leading-none text-white pl-2">
-                            11/2016 - 03/2017
-                        </time>
-
-                        <p className="mb-4 text-base font-normal text-white pl-2">
-                            In my role as a PHP and JavaScript developer, I focused on Laravel development.
-                            I utilized my skills in PHP, JavaScript, and related technologies to build robust web applications.
-                            I had a strong commitment to continuous improvement, constantly updating my skills and learning new
-                            technologies to stay ahead of industry trends.
-                        </p>
-
-                    </li>
-
-                </ol>
+      <div className="mt-6 sm:mt-8 md:mt-10 space-y-4 sm:space-y-5 md:space-y-6">
+        {workExperiences.map((work, index) => (
+          <div
+            key={index}
+            className={`${work.bgColor} border-4 border-black p-4 sm:p-5 md:p-6 relative shadow-neo-sm hover:shadow-[8px_8px_0px_0px_#000000] transition-all duration-300 transform hover:scale-[1.02] hover:-translate-y-2 hover:-rotate-1 group animate__animated animate__fadeInUp`}
+            style={{ animationDelay: `${index * 0.1}s` }}
+          >
+            <div className="absolute -top-3 -left-3 sm:-top-4 sm:-left-4 bg-black border-4 border-black p-1.5 sm:p-2 z-20">
+              <Rocket className="w-5 h-5 sm:w-6 sm:h-6 text-neo-yellow" />
             </div>
 
-        </div>
-    )
-}
+            {/* Decorative corner elements */}
+            <div
+              className={`absolute -bottom-2 -right-2 sm:-bottom-3 sm:-right-3 w-6 h-6 sm:w-8 sm:h-8 ${work.bgColor} border-4 border-black transform rotate-45 opacity-50 group-hover:opacity-100 group-hover:rotate-90 transition-all duration-300`}
+            ></div>
+
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-3 mb-3 relative z-10">
+              <div className="flex items-center gap-2 sm:gap-3 flex-1 min-w-0">
+                <Code2 className="w-5 h-5 sm:w-6 sm:h-6 text-black flex-shrink-0" />
+                <h3 className="text-black text-base sm:text-lg md:text-xl font-bold break-words">
+                  {work.title}
+                </h3>
+              </div>
+              {work.period === "Present" ? (
+                <span className="bg-black text-neo-yellow text-xs sm:text-sm font-bold px-2 py-1.5 sm:px-3 sm:py-1 border-2 sm:border-4 border-black flex items-center gap-1.5 sm:gap-2 w-fit self-start sm:self-auto transform group-hover:scale-110 transition-transform duration-300">
+                  <Calendar className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
+                  Present
+                </span>
+              ) : (
+                <time className="text-xs sm:text-sm font-bold text-black border-2 sm:border-4 border-black bg-white px-2 py-1.5 sm:px-3 sm:py-1 flex items-center gap-1.5 sm:gap-2 w-fit self-start sm:self-auto transform group-hover:scale-110 transition-transform duration-300">
+                  <Calendar className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
+                  {work.period}
+                </time>
+              )}
+            </div>
+            <p className="text-black text-sm sm:text-base font-bold leading-relaxed relative z-10">
+              {work.description}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
 
 export default Work;
