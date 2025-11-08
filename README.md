@@ -15,18 +15,19 @@ A modern, responsive portfolio website built with Next.js 13, featuring a Neo Br
 ## Tech Stack
 
 - **Framework**: Next.js 13 (App Router)
+- **Runtime**: Bun 1.x
 - **Styling**: Tailwind CSS
 - **Icons**: Lucide React
 - **Animations**: Animate.css
 - **Language**: TypeScript
-- **Deployment**: Vercel
+- **Deployment**: Vercel (with Bun runtime)
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js 18+ or Bun
-- npm, yarn, pnpm, or bun package manager
+- **Bun 1.0+** (recommended) or Node.js 22+
+- Bun package manager (or npm/yarn/pnpm)
 
 ### Installation
 
@@ -38,24 +39,24 @@ cd isfhan-portfolio
 
 2. Install dependencies:
 ```bash
+bun install
+# or
 npm install
 # or
 yarn install
 # or
 pnpm install
-# or
-bun install
 ```
 
 3. Run the development server:
 ```bash
+bun dev
+# or
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser.
