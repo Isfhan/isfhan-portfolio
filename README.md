@@ -246,6 +246,7 @@ The cron job will automatically start running once deployed.
 
 Optional environment variables:
 
+- `NEXT_PUBLIC_SITE_URL`: Your website URL (e.g., `https://your-domain.com`) - Used for Open Graph and Twitter Card metadata. Defaults to `https://isfhan-ahmed.vercel.app` if not set.
 - `CRON_SECRET`: Secret key for protecting the API route (optional)
 
 ## Project Structure
