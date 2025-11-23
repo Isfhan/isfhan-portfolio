@@ -11,6 +11,8 @@ A modern, responsive portfolio website built with Next.js 13, featuring a Neo Br
 - 🎯 **Easy Customization** - All data centralized in one file
 - 🌈 **Dynamic Background** - Scroll-based color transitions
 - ✨ **Smooth Animations** - Enhanced user experience with animations
+- 📧 **Contact Form** - Functional contact form with validation
+- 🎨 **Custom Favicon** - Modern SVG favicon with initials
 
 ## Tech Stack
 
@@ -97,7 +99,7 @@ work: [
     title: "Your Job Title",
     period: "01/2024 - Present",
     description: "Your job description...",
-    bgColor: "bg-neo-yellow", // Choose from: bg-neo-yellow, bg-neo-cyan, bg-neo-pink, bg-white
+    bgColor: "bg-brutal-yellow", // Choose from: bg-brutal-yellow, bg-brutal-cyan, bg-brutal-pink, bg-brutal-purple, bg-brutal-green, bg-white
   },
   // Add more work experiences...
 ]
@@ -113,7 +115,7 @@ education: [
     degree: "Your Degree",
     date: "2020 - 2024",
     institution: "Your University",
-    bgColor: "bg-neo-cyan",
+    bgColor: "bg-brutal-cyan",
   },
   // Add more education entries...
 ]
@@ -142,7 +144,7 @@ certifications: [
     provider: "Provider Name",
     image: "/cert-image.png", // Place in public folder
     link: "https://certificate-url.com",
-    bgColor: "bg-neo-yellow",
+    bgColor: "bg-brutal-yellow",
   },
   // Add more certifications...
 ]
@@ -242,6 +244,85 @@ Or visit the URL in your browser.
 
 The cron job will automatically start running once deployed.
 
+### Contact Form & Email Integration
+
+The contact form is fully functional and uses **FormSubmit.co** for email delivery. It works directly from the client side without requiring a backend API route.
+
+#### How It Works
+
+1. **Client-Side Submission**: The form submits directly to FormSubmit.co's AJAX API from the browser
+2. **FormSubmit.co Service**: FormSubmit.co handles email delivery to your specified email address
+3. **No Backend Required**: No API keys or server-side configuration needed
+4. **Automatic Email**: Emails are sent to the address specified in `lib/data.ts` (`personal.email`)
+
+#### Configuration
+
+The email recipient is automatically set from your portfolio data:
+
+```typescript
+personal: {
+  email: "your-email@example.com", // This is where contact form emails will be sent
+}
+```
+
+#### Features
+
+- ✅ **Client-side validation** with field-level error messages
+- ✅ **Real-time error feedback** that clears as users type
+- ✅ **Network error handling** with timeout protection (30 seconds)
+- ✅ **Rate limiting detection** (429 errors)
+- ✅ **Accessibility** with ARIA attributes for screen readers
+- ✅ **Form validation**:
+  - Name: 2-100 characters
+  - Email: Valid format, max 255 characters
+  - Message: 10-2000 characters
+
+#### Email Template
+
+FormSubmit.co uses the "box" template for better email formatting. The email subject is automatically set to: `New Contact Form Submission from [Name]`
+
+#### Customization
+
+To change the email recipient, simply update the `email` field in `lib/data.ts`:
+
+```typescript
+personal: {
+  email: "new-email@example.com", // Update this to change where emails are sent
+}
+```
+
+#### Testing
+
+1. Fill out the contact form on your website
+2. Submit the form
+3. Check the email address specified in `personal.email` for the submission
+4. The email will include the sender's name, email, and message
+
+#### Troubleshooting
+
+- **Emails not arriving?**: Check your spam folder. FormSubmit.co emails may be filtered initially
+- **Rate limiting?**: FormSubmit.co has rate limits. Wait a few minutes between test submissions
+- **Network errors?**: Check your internet connection. The form has a 30-second timeout
+- **Validation errors?**: Ensure all fields meet the minimum requirements (name: 2 chars, message: 10 chars)
+
+#### FormSubmit.co Service
+
+This portfolio uses [FormSubmit.co](https://formsubmit.co) - a free form submission service that doesn't require:
+- API keys
+- Backend configuration
+- Server-side code
+- Email service setup
+
+The service is free for basic use and handles spam protection automatically.
+
+### Favicon
+
+The portfolio includes a custom SVG favicon (`app/icon.svg`) with initials. Next.js 13 automatically generates the necessary favicon files from this SVG. To customize:
+
+1. Replace `app/icon.svg` with your own SVG design
+2. Ensure it follows the brutalist design aesthetic
+3. Next.js will automatically handle favicon generation
+
 ### Environment Variables
 
 Optional environment variables:
@@ -259,6 +340,9 @@ isfhan-portfolio/
 │   │       └── route.ts          # API route for GitHub stats
 │   ├── about/
 │   │   └── page.tsx              # About page
+│   ├── contact/
+│   │   └── page.tsx              # Contact page (uses FormSubmit.co)
+│   ├── icon.svg                  # Custom favicon
 │   ├── layout.tsx                # Root layout
 │   └── page.tsx                  # Home page
 ├── components/                   # React components
@@ -285,18 +369,21 @@ isfhan-portfolio/
 
 The portfolio uses a Neo Brutalism color palette:
 
-- **Yellow**: `#FFE66D` (bg-neo-yellow)
-- **Cyan**: `#06FFA5` (bg-neo-cyan)
-- **Pink**: `#FF6B9D` (bg-neo-pink)
+- **Yellow**: `#F4D738` (bg-brutal-yellow)
+- **Purple**: `#A78BFA` (bg-brutal-purple)
+- **Cyan**: `#67E8F9` (bg-brutal-cyan)
+- **Pink**: `#F472B6` (bg-brutal-pink)
+- **Green**: `#4ADE80` (bg-brutal-green)
 - **White**: `#FFFFFF` (bg-white)
 - **Black**: `#000000` (border-black)
 
 ## Customization Tips
 
-1. **Colors**: Update colors in `tailwind.config.js` under the `neo` color palette
+1. **Colors**: Update colors in `tailwind.config.js` under the `brutal` color palette
 2. **Fonts**: Change fonts in `app/layout.tsx`
 3. **Animations**: Modify animation delays in component files
 4. **Layout**: Adjust spacing and sizing using Tailwind classes
+5. **Favicon**: Replace `app/icon.svg` with your own SVG favicon
 
 ## Troubleshooting
 

@@ -1,7 +1,13 @@
 {
   "name": "isfhan-portfolio",
   "version": "0.1.0",
+  "description": "A modern portfolio website with Neo Brutalism design built with Next.js 13",
   "private": true,
+  "author": "Isfhan Ahmed",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Isfhan/isfhan-portfolio"
+  },
   "engines": {
     "bun": ">=1.0.0",
     "node": ">=22.0.0"
