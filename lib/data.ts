@@ -62,6 +62,8 @@ export interface PortfolioData {
     fullName: string;
     greeting: string;
     image: string;
+    email: string;
+    phone: string;
   };
   hero: {
     greeting: string;
@@ -81,15 +83,19 @@ export interface PortfolioData {
   resume: string;
   copyright: string;
   githubUsername: string;
+
 }
 
 export const portfolioData: PortfolioData = {
+
   personal: {
     firstName: "Isfhan",
     lastName: "Ahmed",
     fullName: "Isfhan Ahmed",
     greeting: "Hi, I'm Isfhan. Nice to meet you.",
     image: "/me2.jpg",
+    email: "isfhan729@gmail.com",
+    phone: "+923059487339",
   },
   hero: {
     greeting: "Hi, I'm Isfhan. Nice to meet you.",
@@ -366,6 +372,7 @@ export const portfolioData: PortfolioData = {
   ],
   resume: "/Isfhan-Resume-2023.pdf",
   githubUsername: "Isfhan",
+
   get copyright() {
     const currentYear = new Date().getFullYear();
     return `© ${currentYear} Isfhan Ahmed™. All Rights Reserved.`;

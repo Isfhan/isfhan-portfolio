@@ -6,7 +6,7 @@ import Education from "@/components/Education";
 
 const Home = () => {
   return (
-    <div className="container max-w-7xl mt-6 sm:mt-8 md:mt-10 mb-12 sm:mb-16 md:mb-20 px-4 sm:px-6 lg:px-8">
+    <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 space-y-20">
       <Hero />
       <Work />
       <Education />
